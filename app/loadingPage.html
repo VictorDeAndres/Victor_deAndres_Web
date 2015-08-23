@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html ng-app="Victor.deAndres.Me">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Victor de Andres</title>
+
+    <!-- build:js -->
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.textillate.js"></script>
+    <script type="text/javascript" src="./lib/jquery.lettering.js"></script>
+    <!-- build:js -->
+
+    <!-- build:css  -->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">     
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <h1 class="tlt">
+        <ul class="texts">
+            <li data-in-effect="rollIn" data-out-effect="rollOut">· Loading page ·</li>   
+            <li data-in-effect="rollIn" data-out-effect="rollOut">· Victor de Andres ·</li>
+            <li data-in-effect="rollIn" data-out-effect="rollOut">· Scrum Master ·</li>
+        </ul>
+    </h1>
+    <script type="text/javascript">
+      $(function () {
+        $('.tlt').textillate({ 
+          loop: true,
+          minDisplayTime: 0,          
+          in: { effect: 'rollIn' },
+          out: { effect: 'rollOut'}
+        });
+      })
+    </script>
+
+    <div id="wrapper">
+      <!-- Menu -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <span class="navbar-brand navbar-right" >
+                      <span>Victor de Andr&eacute;s</span>
+                  </span>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                      <ul class="dropdown-menu">
+                          <li>
+                            <a id="linktoaboutme" href="#">
+                              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                              <span class="separmenu">Sobre Mi</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a id="linktoportfolio" href="#">
+                              <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                              <span class="separmenu">Portfolio</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a id="linktocontacta" href="#">
+                              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                              <span class="separmenu">Contacta</span>
+                            </a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <!-- eof Menu -->
+
+      <!-- Footer -->
+      <div id="AppFooter">
+        <div class="TextFooter">
+          2015 - Diseño y desarrollo por Victor de Andr&eacutes
+        </div>
+        <div class="IconFooter">
+          <div class="IconGraphic">
+            <a href="#" id="Mail"></a>
+          </div>        
+        </div>          
+        <div class="IconFooter">
+          <div class="IconGraphic">
+            <a href="http://es.linkedin.com/in/vdeandres" id="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="IconFooter">
+          <div class="IconGraphic">
+            <a href="https://twitter.com/victor_deandres" id="Twitter"></a>
+          </div>
+        </div>      
+        <div class="IconFooter">
+          <div class="IconGraphic">
+            <a href="https://github.com/VictorDeAndres" id="GitHub"></a>
+          </div>
+        </div>    
+      </div>
+      <!-- eof Footer -->
+
+      <!-- Slide Intro -->
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="slidemenu"></div>
+                <div id="iamcard">
+                  <div id="iam">Victor de Andr&eacutes</div>
+                  <div id="iamprofession">SCRUM MASTER</div>
+                  <div id="iamprofession">JEFE PROYECTO</div>
+                  <div id="iamsubtitleprofession">- desarrollo de software -</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3"></div>
+          </div> 
+          <div class="row">
+            <div id="ComeIn"></div> 
+          </div>
+        </div>        
+      </div>
+      <!-- eof slide Intro -->
+
+      <!-- Slide About me -->
+      <div class="slide" id="AboutMeSlide">
+        <div class="container">
+          <div class="TitleSlide">
+            <object class="IconTitle" type="image/svg+xml" data="./images/avatar.svg"></object>
+            <div id="AboutMeTitle">Sobre mi</div>
+          </div>
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-10 col-md-10">
+            <p>Scum Master / Jefe de proyecto desde hace más de cinco años, durante este tiempo he dirigido equipos multidisciplinares de hasta 7 personas. He dirigido tanto nuevos proyectos, desde el inicio hasta la puesta en producción del mismo, como proyectos evolutivos sobre soluciones ya existentes. Para el desarrollo de los proyectos, siempre orientados a entornos de movilidad y/o web, he utilizado, dependiendo del proyecto, los siguientes lenguajes: .Net C#, C/AL, PHP, NodeJS, HTML5, CSS3, JavaScript, AngularJS; bases de datos: MsSQL Server, MySql, SQL Server Analysis Services; frameworks: Symfony, Cordova; front-end frameworks: Bootstrap, Sencha, FusionCharts; tecnologías de intregración: SOAP, SSIS, RabbitMQ; y plataformas como Magento o Wordpress.</p>
+            <p>Siempre he utilizado metodologías ágiles, Scrum para el desarrollo durante el ciclo de vida del proyecto, y Kanban para la gestión diaria de los equipos, además de Jenkins CI como herramienta de integración continua. Mi mayor logro profesional ha sido desarrollar un nuevo ecosistema de nuevas aplicaciones (Business Intelligent, CRM y eCommerce) interconectadas entre sí y sincronizadas con Microsoft Dynamics Nav en un entorno web/movilidad.</p>
+            <p>Anteriormente estuve trabajando como Coordinador/Jefe de equipo desarrollando nuevas funcionalidades para Microsoft Dynamics Nav, tanto en Navision (C/AL), como en .Net C# y VisualBasic, siempre integradas dentro de Navision.</p>
+          </div>
+          <div class="col-lg-1 col-md-1"></div>        
+        </div>
+      </div>
+      <!-- eof about me -->
+
+      <!-- Slide Proyects -->
+      <div ng-controller="ProjectListCtrl" class="slide" id="ProjectSlide" >
+        <div class="container">
+          <div class="TitleSlide">
+            <object class="IconTitle" type="image/svg+xml" data="./images/projects.svg"></object>
+            <div id="ProjectTitle">Proyectos</div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="ExperienceSlide"> 
+            <div class="row">
+              <div class="col-lg-1 col-md-1">
+                <div class="Arrow" id="Left" ng-click="prevSlide()"></div>            
+              </div>
+              <span ng-repeat="gettingParentIndex in projectSlides">
+                <div class="col-lg-5 col-md-5">
+                  <div class="ExperienceCard">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+                        <div class="TitleProject">{{projectSlides[$index].name}}</div>
+                      </div>
+                    </div>
+                    <div class="TechCard" id="{{projectSlides[$index].id}}" ng-hide="showcard">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-2">
+                            <div><img src="./images/database.svg" /></div>
+                          </div>
+                          <div class="col-lg-10 col-md-10">{{projectSlides[$index].database}}</div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-lg-2 col-md-2">
+                            <div><img src="./images/monitor.svg" /></div>
+                          </div>
+                          <div class="col-lg-10 col-md-10">{{projectSlides[$index].view}}</div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-lg-2 col-md-2">
+                            <div><img src="./images/server.svg" /></div>
+                          </div>
+                          <div class="col-lg-10 col-md-10">{{projectSlides[$index].server}}</div>
+                        </div>        
+                        <div class="row">
+                          <div class="col-lg-2 col-md-2">
+                            <div><img src="./images/connection.svg" /></div>
+                          </div>
+                          <div class="col-lg-10 col-md-10">{{projectSlides[$index].connection}}</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-2 col-md-2">
+                            <div><img src="./images/tools.svg" /></div>
+                          </div>
+                          <div class="col-lg-10 col-md-10">{{projectSlides[$index].tools}}</div>
+                        </div>                                                                            
+                    </div>
+                    <div class="ResumeCard" id="{{projectSlides[$index].id}}" ng-show="showcard"> 
+                        <div>
+                          {{projectSlides[$index].summary}}
+                        </div>                                      
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-10 col-md-9" class="text-right">
+                        <span class="Tech" id="{{projectSlides[$index].id}}" ng-click="showcard=false">Tecnologias</span>
+                        <span>|</span>
+                        <span class="Resume" id="{{projectSlides[$index].id}}" ng-click="showcard=true">Resumen</span>
+                      </div>
+                      <div class="col-lg-2 col-md-3" class="text-left">
+                        <span class="MoreInformation" id="{{projectSlides[$index].id}}" ng-click="openModal('lg','templateModal.html')">+ Info</span>
+                      </div>
+                    </div>                  
+                    <div calc-resume-card-height></div>                
+                  </div>
+                </div>
+              </span>
+              <div class="col-lg-1 col-md-1">
+                <div class="Arrow" id="Right" ng-click="nextSlide()"></div>           
+              </div>          
+            </div> 
+
+          </div>
+        </div>
+      </div>
+      <!-- eof Proyects -->
+
+      <!-- Slide Contact -->
+      <div class="slide" id="ContactSlide">
+        <div class="container">
+          <div class="slidemenu"></div>
+          <div class="TitleSlide">
+            <object class="IconTitle" type="image/svg+xml" data="./images/eMail.svg">SitePoint</object>
+            <div id="ContactaTitle">Contacta</div>
+          </div>
+          <div class="row">
+            <div class="col-md-5" id="ContactLetter">
+              <p>Hola,</p>
+              <p>
+                <span>Si quieres ponerte en contacto conmigo para cualquier tema puedes rellenar el formulario que tienes a tu derecha.</span>
+                <span>O si prefieres ponerte en contacto conmigo directamente, puedes hacerlo atraves de mi dirección de correo</span>
+                <span>victor.deandres&#64;gmail</span>
+              </p>
+              <p>En cualquiera de los casos recibiras una respuesta mia a la mayor brevedad posible</p>
+              <p>Gracias</p>
+            </div>
+            <div class="col-md-7">
+              <form class="form-horizontal" role="form" method="post" action="index.php">
+                <div class="form-group">
+                  <label for="name" class="col-md-3 control-label">Nombre</label>
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="nombre" value="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="col-md-3 control-label">Email</label>
+                  <div class="col-md-8">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="mail@dirección.es" value="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="col-md-3 control-label">Mensaje</label>
+                  <div class="col-md-8">
+                    <textarea class="form-control" rows="8" name="mensaje" placeholder="tu mensaje" value=""></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-3 col-md-offset-9">
+                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                  </div>
+                </div>
+              </form>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <body>
+    <div id="loadingpage">
+      <div class="grid grid-pad">
+        <section class="col-1-1">
+          <div class="message grid">
+            <div class="col-1-1 viewport">
+              <div class="tlt">
+                <ul class="texts">
+                  <li data-in-effect="rollIn" data-out-effect="rollOut">· Loading Page ·</li>
+                  <li data-in-effect="rollIn" data-out-effect="rollOut">· Victor de Andres ·</li>
+                  <li data-in-effect="rollIn" data-out-effect="rollOut">· Scrum Master ·</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    
+    <script type="text/javascript">
+      $(function () {
+        $('#loadingpage').css('display', 'block');
+        $('.tlt').textillate({ 
+          loop: true,
+          minDisplayTime: 0,          
+          in: { effect: 'rollIn' },
+          out: { effect: 'rollOut'}
+        });
+      })
+    </script>
+</html>

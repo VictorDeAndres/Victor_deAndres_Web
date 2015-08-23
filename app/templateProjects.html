@@ -1,0 +1,79 @@
+    <!-- Slide Proyects -->
+    <div ng-controller="ProjectListCtrl" class="slide" id="_Project_Slide_" >
+      <div class="container">
+      <!--<div style="display:block; height: 96px;"></div>-->
+        <div class="TitleSlide">
+          <object class="IconTitle" type="image/svg+xml" data="./images/projects.svg"></object>
+          <div id="ProjectTitle">Proyectos</div>
+        </div>      
+        <span ng-repeat="gettingParentIndex in projects">
+          <div class="row" ng-if="$index<projects.length/2+1">   
+            <!--<div class="col-lg-1"></div>-->
+              <span ng-repeat="project in projects">
+                <div class="col-lg-6" ng-if="$index>=2*$parent.$index && $index <= 2*($parent.$index+1)-1"> 
+                  <div class="ExperienceCard">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="TitleProject">{{project.name}}</div>
+                      </div>
+                    </div>
+                    <div class="TechCard" id="{{project.id}}" ng-hide="showcard">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div><img src="./images/database.svg" /></div>
+                        </div>
+                        <div class="col-md-10">{{project.database}}</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div><img src="./images/monitor.svg" /></div>
+                        </div>
+                        <div class="col-md-10">{{project.view}}</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div><img src="./images/server.svg" /></div>
+                        </div>
+                        <div class="col-md-10">{{project.server}}</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div><img src="./images/connection.svg" /></div>
+                        </div>
+                        <div class="col-md-10">{{project.connection}}</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div><img src="./images/tools.svg" /></div>
+                        </div>
+                        <div class="col-md-10">{{project.tools}}</div>
+                      </div>
+                    </div>            
+                    <div class="ResumeCard" id="{{project.id}}" ng-show="showcard">
+                      <div>
+                        {{project.summary}}
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10" class="text-right">
+                        <!--<span class="Tech" id="{{project.id}}" ng-click="openModal('xl','templateModal.html')">-->
+                        <span class="Tech" id="{{project.id}}" ng-click="showcard=false">Tecnologias</span>
+                        <span>|</span>
+                        <span class="Resume" id="{{project.id}}" ng-click="showcard=true">Resumen</span>
+                      </div>
+                      <div class="col-md-2" class="text-left">
+                        <span class="MoreInformation" id="{{project.id}}" ng-click="openModal('lg','templateModal.html')">+ Info</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+          </div>
+        </span>
+      </div>
+    </div>
+    <!-- eof Proyects -->

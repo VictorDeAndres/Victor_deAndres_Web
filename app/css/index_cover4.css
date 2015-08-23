@@ -1,0 +1,148 @@
+/* Fuentes */
+
+
+@font-face {
+    font-family: caviar;
+    src: url(./../fonts/caviardreams.ttf);
+}
+
+@font-face {
+    font-family: nevis;
+    src: url(./../fonts/nevis.ttf);
+}
+
+@font-face {
+    font-family: mohave;
+    src: url(./../fonts/mohave.otf);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url(./../images/cover4.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.navbar {
+   background-color: #BDA67E;
+   background: rgba(32, 32, 32, 0.2);
+   border-color: transparent;
+}
+
+.navbar li { color: #000 } 
+
+.separmenu {
+	padding-left: 1em;
+}
+
+.slide {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	/*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+
+
+#iamcard{
+	display: inline-block;
+    padding-top: 3em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    color: #fff;
+    background-color: rgba(32, 32, 32, 0.2);
+	text-align: center;
+
+	margin-top: 96px;
+}
+
+#iam{
+	font-family: mohave;	
+	font-size: 5.2em;
+	padding-bottom: 1em;
+}
+
+#iamprofession{
+	font-family: nevis;	
+	font-size: 4.1em;
+	font-weight: 500;
+	line-height: .8em;
+}
+
+#iamsubtitleprofession{
+	font-family: caviar;
+	font-size: 3em;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+  	color: rgba(255,255,255,.8);	
+  	width: 100%; 
+  	text-align: right;
+}
+
+#AboutMeSlide {
+	background-color: #BDA67E;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	color: #3D3629;
+	font-family: caviar;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+#AboutMeTitle {
+	font-family: mohave;
+	font-size: 3em;
+	font-weight: 700;
+	color: #FFE9C3;
+
+	margin-top: 96px;
+	margin-bottom: 48px;
+}
+
+#ProjectSlide {
+	background-color: #F4EDDB;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+}
+
+#ContactSlide {
+	background-color: #685944;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+}
+
+#ContactTitle {
+	font-family: mohave;
+	font-size: 3em;
+	font-weight: 700;
+	color: #EEB557;
+
+	margin-top: 96px;
+}
+
+#ContactLetter {
+	font-family: caviar;
+	font-size: 1.2em;
+	text-align: justify;
+	color: #F4EDDB;
+}
+
+.modal-header {
+	font-family: mohave;
+	font-size: 2.4em;
+}
+
+.modal-body {
+	font-family: caviar;
+	text-align: justify;
+	font-size: 1.2em;
+}

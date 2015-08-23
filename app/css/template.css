@@ -1,0 +1,28 @@
+.ExperienceCard{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	padding-left: 30px;
+	padding-bottom: 12px;
+	padding-right: 30px;
+	padding-top: 12px;
+	font-family: caviar;
+	font-size: 1.2em;
+	color: #15B0BF;
+	margin-bottom: 25px;
+
+}
+
+.ResumeCard{
+	font-size: 0.85em;
+	text-align: justify;
+}
+
+.TitleProject{
+	font-family: mohave;
+	font-size: 1.8em;
+	color: #F6A100;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
