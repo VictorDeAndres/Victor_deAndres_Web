@@ -1,0 +1,14 @@
+/* 					*/
+/* Modal Window 	*/
+/*					*/
+
+.modal-header {
+	font-family: mohave;
+	font-size: 2.4em;
+}
+
+.modal-body {
+	text-align: justify;
+	font-size: 1.2em;
+}
+

@@ -1,0 +1,29 @@
+/* 					*/
+/* About Me slide	*/
+/*					*/
+
+#AboutMeSlide {
+	
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+#AboutMeTitle{
+	margin-left: 84px;
+	color: #29A69C;
+}
+
+
+#ComeIn{
+	display:block;
+	padding-top: 89px;
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/down-arrows10.svg);
+
+}

@@ -1,0 +1,21 @@
+/* 					*/
+/* Contact slide	*/
+/*					*/
+
+#ContactSlide {
+	min-height: 100%;
+	height: 100%; /* For at least Firefox */
+	font-size: 1.3em;
+	text-align: justify;	
+}
+
+
+#ContactaTitle{
+	margin-left: 84px;
+	color: #F6A100;
+}
+
+#ContactLetter {
+	font-size: 1.1em;
+	text-align: justify;
+}

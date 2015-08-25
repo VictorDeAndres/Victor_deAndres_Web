@@ -1,0 +1,131 @@
+/* Fuentes */
+
+@font-face {
+    font-family: caviar;
+    src: url(./../fonts/caviardreams.ttf);
+}
+
+@font-face {
+    font-family: nevis;
+    src: url(./../fonts/nevis.ttf);
+}
+
+@font-face {
+    font-family: mohave;
+    src: url(./../fonts/mohave.otf);
+}
+
+/* General */
+
+html, body {
+	height: 100%;
+	font-family: caviar;
+}
+
+body {
+	background: cover;
+	background-color: #000;
+}
+
+
+/*					*/
+/* Navigation Bar 	*/
+/*					*/	
+
+
+.navbar {
+   background-color: #fff;
+   background: #fff;
+   border-color: #fff;
+}
+
+
+/*					*/
+/* Slide 			*/
+/*					*/
+
+.slide {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	background-color: #fff;
+}
+
+/*					*/
+/* Footer			*/
+/*					*/
+
+
+#AppFooter {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+
+	bottom: 0;
+	z-index: 90;
+
+}
+
+.IconFooter {
+	display: table-cell;
+	width: 35px;
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.IconGraphic {
+	display: inline-block;
+	width: 30px; height: 30px;
+}
+
+.TextFooter{
+	display: table-cell;
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	margin-right: 20px;
+}
+
+#LinkedIn{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/linkedin.png);
+	display: block;
+	text-indent: -9999px;
+	width: 30px;
+	height: 30px;
+}
+
+#Mail{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/mail.png);
+	display: block;
+	text-indent: -9999px;
+	width: 30px;
+	height: 30px;
+}
+
+#Twitter{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/twitter.png);
+	display: block;
+	text-indent: -9999px;
+	width: 30px;
+	height: 30px;
+}
+
+#GitHub{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/github.png);
+	display: block;
+	text-indent: -9999px;
+	width: 30px;
+	height: 30px;
+}

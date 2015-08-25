@@ -31,52 +31,28 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
   /* Controlador pantalla modal 
   /*
   */
-  .controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+  .controller('ModalInstanceCtrl', ['$scope', function ($scope, $modalInstance) {
 
     $scope.close = function () {
       $modalInstance.close();
     };
-  })
+
+  }])
 
   /**
   /*
   /* Controlador lista proyectos
+  /* Nota. Definicion del controlador para poder que funcione al minimizar
+  /* Original: .controller('ProjectListCtrl', function ($scope, $modal) {
   /*
   */
-  .controller('ProjectListCtrl', function ($scope, $modal) {
+  .controller('ProjectListCtrl', ['$scope', '$http', '$modal', function ($scope, $http, $modal) {
 
-    $scope.projects = [
-      {
-        'id': 'Card1',
-        'name': 'LOREM IPSU 1',
-        'database': 'SQLServer + MongoDb',
-        'view' : 'HTML5 + AngularJS + Bootstrap',
-        'server' : 'NodeJS + .Net (C#)',
-        'connection' : 'WebService + MsETL',
-        'tools' : 'JenkinsIC',
-        'summary' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque.'
-      },{ 
-        'id': 'Card2',
-        'name': 'LOREM IPSU 2',
-        'database': 'SQLServer + MySQL',
-        'view' : 'HTML5 + JQuery',
-        'server' : 'PHP5 + .Net (c#)',
-        'connection' : 'WebService',
-        'tools' : 'Symfony2',
-        'summary' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque.'
-      },{
-        'id': 'Card3',
-        'name': 'LOREM IPSU 3',
-        'database': 'SQLServer + MongoDb',
-        'view' : 'HTML5 + AngularJS + Bootstrap',
-        'server' : 'NodeJS + .Net (C#)',
-        'connection' : 'WebService + MsETL',
-        'tools' : 'JenkinsIC',
-        'summary' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque.'
-      }
-    ];
-
-    $scope.projectSlides = [];
+    $http.get('json/project.data.json').success (function(data){
+      $scope.projects = data;
+      $scope.projectSlides = [];
+      setCurrentProjectSlides(0);
+    });
 
     function setCurrentProjectSlides (index) {
       $scope.projectSlides = [];
@@ -88,7 +64,6 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
     }
 
     $scope.currentIndex = 0;
-    setCurrentProjectSlides(0);
 
     $scope.setCurrentSlideIndex = function (index) {
       $scope.currentIndex = index;
@@ -117,7 +92,7 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
       });
     }
 
-  })
+  }])
 ;
 
 

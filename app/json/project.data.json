@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Card1",
+    "name": "LOREM IPSU 1",
+    "database": "SQLServer + MongoDb",
+    "view" : "HTML5 + AngularJS + Bootstrap",
+    "server" : "NodeJS + .Net (C#)",
+    "connection" : "WebService + MsETL",
+    "tools" : "JenkinsIC",
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque."
+  },{
+    "id": "Card2",
+    "name": "LOREM IPSU 2",
+    "database": "SQLServer + MySQL",
+    "view" : "HTML5 + JQuery",
+    "server" : "PHP5 + .Net (c#)",
+    "connection" : "WebService",
+    "tools" : "Symfony2",
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque."
+  },{
+    "id": "Card3",
+    "name": "LOREM IPSU 3",
+    "database": "SQLServer + MongoDb",
+    "view" : "HTML5 + AngularJS + Bootstrap",
+    "server" : "NodeJS + .Net (C#)",
+    "connection" : "WebService + MsETL",
+    "tools" : "JenkinsIC",
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque."
+  }
+]

@@ -1,0 +1,89 @@
+
+/* 					*/
+/* Landing slide	*/
+/*					*/
+
+#intro {
+	background: url(./../images/cover.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.IconTitle {
+	display: block;
+	width: 72px;
+	height: 72px;
+	float: left;
+}
+
+.TitleSlide {
+	margin-top: 72px;
+	margin-bottom: 48px;
+
+	font-family: mohave;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+#iamcard{
+	display: inline-block;
+    padding-top: 3em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    color: #fff;
+    background-color: rgba(32, 32, 32, 0.2);
+	text-align: center;
+
+	margin-top: 96px;
+}
+
+#iam{
+	font-family: mohave;	
+	padding-bottom: 1em;
+	font-size: 5.2em;
+}
+
+
+#iamprofession{
+	font-family: nevis;	
+	font-size: 4.1em;
+	font-weight: 500;
+	line-height: 1em;
+}
+
+#iamsubtitleprofession{
+	font-size: 3em;
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 	
+
+	#iam {
+		font-size: 4.6em;
+	}
+
+	#iamprofession {
+		font-size: 3.5em;	
+	}
+
+	#iamsubtitleprofession{
+		font-size: 2.5em;
+	}
+}
+
+@media only screen and (max-device-width : 768px) { 	
+
+	#iam {
+		font-size: 3.4em;
+	}
+
+	#iamprofession {
+		font-size: 2.6em;	
+	}
+
+	#iamsubtitleprofession{
+		font-size: 1.9em;
+	}
+}
+

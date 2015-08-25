@@ -3,9 +3,10 @@ var gulp = require('gulp'),
   dest = require('gulp-dest'),
   minifyCss = require('gulp-minify-css'),
   uglify = require('gulp-uglify'),
+  jsonminify = require('gulp-jsonminify'),
   useref = require('gulp-useref');
 
-var myDist = ['./dist/*.html', './dist/css/*', './dist/fonts/*', './dist/images/*', './dist/js/*', './dist/lib/*'];
+var myDist = ['./dist/*.html', './dist/css/*', './dist/fonts/*', './dist/images/*', './dist/data/*', './dist/js/*', './dist/lib/*'];
 
 gulp.task('clean', function () {
   return del('./dist/*/*');
@@ -28,13 +29,20 @@ gulp.task('css', ['updateUseRef'], function () {
 
 gulp.task('javascript', ['updateUseRef'], function () {
   return gulp.src('./dist/js/*')
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
 });
 
 gulp.task('library', ['updateUseRef'], function () {
   return gulp.src('./dist/lib/*')
-    .pipe(uglify())  
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/lib'));
+});
+
+gulp.task('json', function () {
+  return gulp.src(['./app/json/*.json'])
+    .pipe(jsonminify())
+    .pipe(gulp.dest('./dist/json'));
 });
 
 gulp.task('fonts', function () {
@@ -47,7 +55,6 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/images'));
 });
 
-
-gulp.task('build', ['clean', 'css', 'javascript', 'library', 'images', 'fonts' ]);
+gulp.task('build', ['clean', 'css', 'javascript', 'library', 'json', 'images', 'fonts' ]);
 
 
