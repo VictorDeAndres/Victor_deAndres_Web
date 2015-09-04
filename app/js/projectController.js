@@ -31,7 +31,7 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
   /* Controlador pantalla modal 
   /*
   */
-  .controller('ModalInstanceCtrl', ['$scope', function ($scope, $modalInstance) {
+  .controller('ModalInstanceController', ['$scope', function ($scope, $modalInstance) {
 
     $scope.close = function () {
       $modalInstance.close();
@@ -41,12 +41,13 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
 
   /**
   /*
+  /*
   /* Controlador lista proyectos
   /* Nota. Definicion del controlador para poder que funcione al minimizar
-  /* Original: .controller('ProjectListCtrl', function ($scope, $modal) {
+  /* Original: .controller('ProjectsController', function ($scope, $modal) {
   /*
   */
-  .controller('ProjectListCtrl', ['$scope', '$http', '$modal', function ($scope, $http, $modal) {
+  .controller('ProjectsController', ['$scope', '$http', '$modal', function ($scope, $http, $modal) {
 
     $http.get('json/project.data.json').success (function(data){
       $scope.projects = data;
@@ -86,12 +87,29 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
     $scope.openModal = function (size, template){
       var modalInstance = $modal.open({
         templateUrl: template,
-        controller: 'ModalInstanceCtrl',
+        controller: 'ModalInstanceController',
         animation: false,
         size: size
       });
     }
 
+  }])
+
+  /*
+  /* Controlador validacion formulario de contacto
+  /*
+  */
+  .controller('ContactFormController', ['$scope', function($scope){
+    $scope.submit = function(form) {
+
+      $scope.submitted = true;
+
+      if (form.$invalid) {
+        return;
+      } 
+      
+      console.info('envio de mensaje ok');
+    }
   }])
 ;
 
