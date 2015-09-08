@@ -6,7 +6,7 @@ var gulp = require('gulp'),
   jsonminify = require('gulp-jsonminify'),
   useref = require('gulp-useref');
 
-var myDist = ['./dist/*.html', './dist/css/*', './dist/fonts/*', './dist/images/*', './dist/data/*', './dist/js/*', './dist/lib/*'];
+var myDist = ['./dist/*.html', './dist/css/*', './dist/fonts/*', './dist/images/*', './dist/data/*', './dist/js/*', './dist/lib/*', './dist/php/*'];
 
 gulp.task('clean', function () {
   return del('./dist/*/*');
@@ -55,6 +55,13 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('build', ['clean', 'css', 'javascript', 'library', 'json', 'images', 'fonts' ]);
+gulp.task('php', function () {
+  return gulp.src(['./app/php/*.php'])
+    .pipe(jsonminify())
+    .pipe(gulp.dest('./dist/php'));
+});
+
+gulp.task('build', ['clean', 'css', 'javascript', 'library', 'json', 'images', 'fonts', 'php' ]);
+
 
 

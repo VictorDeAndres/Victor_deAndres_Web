@@ -99,17 +99,38 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
   /* Controlador validacion formulario de contacto
   /*
   */
-  .controller('ContactFormController', ['$scope', function($scope){
+  .controller('ContactFormController', ['$scope', '$http', function($scope, $http){
     $scope.submit = function(form) {
 
       $scope.submitted = true;
 
+      
       if (form.$invalid) {
         return;
       } 
       
-      console.info('envio de mensaje ok');
+      
+      var dataObj = {
+        username : $scope.user.name,
+        mail : $scope.user.email,
+        message : $scope.user.message
+      }
+
+      var request = {
+        method: 'POST',
+        url: '/personal/app/php/contact.php',
+        data: dataObj
+      }
+
+      $http(request)
+        .then(function(response){
+          console.log(response)
+        }, 
+        function(response){
+          console.error(response);
+        });
     }
+
   }])
 ;
 
