@@ -8,7 +8,7 @@
 	min-height: 100%;
 }
 
-#ProjectTitle{
+#ProjectTitle {
 	margin-left: 84px;
 	color: #FC611F;
 }
@@ -25,15 +25,13 @@
 	display: table;
 	width: 100%;
 	float: left;
-	background-color: #15B0BF;
+	/*background-color: #15B0BF;*/
 	z-index: 90;
 }
 
-
-#slideContainer{
+#slideContainer {
     position: relative;
     width: 100px;
-    background: green;
     z-index: 80;
 }
 
@@ -44,47 +42,64 @@
 	z-index: 100;
 }
 
-.Arrow#Left{
-    background: green;
+.Arrow#Left { 
 	background: url(../images/l-arrow.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 
-.Arrow#Right{
-	    background: red; 
+.Arrow#Right {
 	background: url(../images/r-arrow.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 
 }
 
-.ExperienceCard{
+.ExperienceCard {
 	width: 100%;
 	height: 100%;
 	background-color: #fff;
-	padding-left: 30px;
+	/*padding-left: 30px;
 	padding-bottom: 12px;
 	padding-right: 30px;
-	padding-top: 12px;
+	padding-top: 12px;*/
 	font-size: 1.2em;
 	color: #2D3E59;
 	margin-top: 25px;
 	margin-bottom: 25px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #15B0BF;
+
 }
 
-.ResumeCard{
+.ResumeCard {
 	font-size: 0.85em;
 	text-align: justify;
 }
 
-.TitleProject{
+.TitleProject {
 	font-family: mohave;
 	font-size: 1.8em;
-	color: #FC611F;
-	height: 50px;
+	color: #fff;
+	height: 76px;
+	padding-top: 12px;
 	text-align: center;
 	margin-bottom: 0.5em;
+	background-color: #15B0BF;
+}
+
+.FooterProject {
+	color: #fff;
+	height: 38px;
+	background-color: #15B0BF;
+	padding-top: 6px;
+}
+
+.paddingInsideCard {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .InfoSlide{

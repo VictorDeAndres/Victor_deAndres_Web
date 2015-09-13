@@ -118,7 +118,7 @@ angular.module('Victor.deAndres.Me', ['ui.bootstrap'])
 
       var request = {
         method: 'POST',
-        url: '/personal/app/php/contact.php',
+        url: '/php/contact.php',
         data: dataObj
       }
 

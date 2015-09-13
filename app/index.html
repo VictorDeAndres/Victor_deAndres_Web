@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+
     <!-- build:css  ./css/bootstrap.min.css-->
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">     
     <!-- endbuild -->
@@ -151,7 +158,7 @@
                       <div class="TitleProject">{{projectSlides[$index].name}}</div>
                     </div>
                   </div>
-                  <div class="TechCard" id="{{projectSlides[$index].id}}" ng-hide="showcard">
+                  <div class="TechCard paddingInsideCard " id="{{projectSlides[$index].id}}" ng-hide="showcard">
                       <div class="row">
                         <div class="col-lg-2 col-md-2">
                           <div><img src="./images/database.svg" /></div>
@@ -183,21 +190,27 @@
                         <div class="col-lg-10 col-md-10">{{projectSlides[$index].tools}}</div>
                       </div>                                                                            
                   </div>
-                  <div class="ResumeCard" id="{{projectSlides[$index].id}}" ng-show="showcard"> 
+                  <div class="ResumeCard paddingInsideCard" id="{{projectSlides[$index].id}}" ng-show="showcard"> 
                       <div>
                         {{projectSlides[$index].summary}}
                       </div>                                      
                   </div>
                   <div class="row">
-                    <div class="col-lg-10 col-md-9" class="text-right">
-                      <span class="Tech" id="{{projectSlides[$index].id}}" ng-click="showcard=false">Tecnologias</span>
-                      <span>|</span>
-                      <span class="Resume" id="{{projectSlides[$index].id}}" ng-click="showcard=true">Resumen</span>
+                    <div class="col-lg-12 col-md-12">
+                      <div class="FooterProject paddingInsideCard">
+                        <div class="row">
+                          <div class="col-lg-10 col-md-9" class="text-right">
+                            <span class="Tech" id="{{projectSlides[$index].id}}" ng-click="showcard=false">Tecnologias</span>
+                            <span>|</span>
+                            <span class="Resume" id="{{projectSlides[$index].id}}" ng-click="showcard=true">Resumen</span>
+                          </div>
+                          <div class="col-lg-2 col-md-3" class="text-left">
+                            <span class="MoreInformation" id="{{projectSlides[$index].id}}" ng-click="openModal('lg','templateModal.html')">+ Info</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-lg-2 col-md-3" class="text-left">
-                      <span class="MoreInformation" id="{{projectSlides[$index].id}}" ng-click="openModal('lg','templateModal.html')">+ Info</span>
-                    </div>
-                  </div>                  
+                  </div>
                   <div calc-resume-card-height></div>                
                 </div>
               </div>

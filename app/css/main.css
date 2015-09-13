@@ -1,18 +1,24 @@
 /* Fuentes */
 
 @font-face {
-    font-family: caviar;
-    src: url(./../fonts/caviardreams.ttf);
+	font-family: 'mohave';
+	src: local('☺');
+	src: url('/fonts/Mohave.eot');
+	src: url('/fonts/Mohave.woff') format('woff'), url('/fonts/Mohave.ttf') format('truetype'), url('/fonts/Mohave.svg') format('svg');
 }
 
 @font-face {
-    font-family: nevis;
-    src: url(./../fonts/nevis.ttf);
+	font-family: 'caviar';
+	src: local('☺');
+	src: url('/fonts/CaviarDreams.eot');
+	src: url('/fonts/CaviarDreams.woff') format('woff'), url('/fonts/CaviarDreams.ttf') format('truetype'), url('/fonts/CaviarDreams.svg') format('svg');
 }
 
 @font-face {
-    font-family: mohave;
-    src: url(./../fonts/mohave.otf);
+	font-family: 'nevis';
+	src: local('☺');
+	src: url('/fonts/nevis.eot');
+	src: url('/fonts/nevis.woff') format('woff'), url('/fonts/nevis.ttf') format('truetype'), url('/fonts/nevis.svg') format('svg');
 }
 
 /* General */
