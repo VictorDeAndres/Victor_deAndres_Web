@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html ng-app="Victor.deAndres.Me">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- build:css  ./css/bootstrap.min.css-->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">     
+    <!-- endbuild -->
+
+    <!-- build:css  ./css/index.min.css-->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/project2.css">
+    <!-- endbuild -->
+
+    <title>Victor de Andres</title>
+
+  </head>
+  <body>
+
+    <!-- Slide Proyects -->
+    <div ng-controller="ProjectListCtrl" class="slide" id="ProjectSlide" >
+      <div class="container">
+        <div class="TitleSlide">
+          <object class="IconTitle" type="image/svg+xml" data="./images/projects.svg"></object>
+          <div id="ProjectTitle">Proyectos</div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="ExperienceSlide"> 
+          <div class="row">
+            <div class="col-lg-1 col-md-1">
+            </div>
+            <span ng-repeat="gettingParentIndex in projectSlides">
+              <div class="col-lg-5 col-md-5">
+                <div class="ExperienceCard">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                      <div class="TitleProject">{{projectSlides[$index].name}}</div>
+                    </div>
+                  </div>
+                  <div class="TechCard" id="{{projectSlides[$index].id}}" ng-hide="showcard">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4">
+
+                          <div class="container">
+                            <div class="col-lg-6 col-md-6">
+                              Par
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              Impar
+                            </div>
+                            <div><img src="./images/database.svg" /></div>  
+                          </div>  
+                          
+
+
+
+                        </div>
+                        <div class="col-lg-8 col-md-8">{{projectSlides[$index].database}}</div>
+                      </div> 
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-10 col-md-9" class="text-right">
+                      <span class="Tech" id="{{projectSlides[$index].id}}" ng-click="showcard=false">Tecnologias</span>
+                      <span>|</span>
+                      <span class="Resume" id="{{projectSlides[$index].id}}" ng-click="showcard=true">Resumen</span>
+                    </div>
+                    <div class="col-lg-2 col-md-3" class="text-left">
+                      <span class="MoreInformation" id="{{projectSlides[$index].id}}" ng-click="openModal('lg','templateModal.html')">+ Info</span>
+                    </div>
+                  </div>                  
+                  <div calc-resume-card-height></div>                
+                </div>
+              </div>
+            </span>
+            <div class="col-lg-1 col-md-1">
+            </div>          
+          </div> 
+
+        </div>
+      </div>
+    </div>
+    <!-- eof Proyects -->
+
+    <!-- build:js ./lib/jquery.min.js-->    
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>    
+    <!-- endbuild -->
+    <!-- build:js ./lib/angular.min.js-->    
+    <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+    <!-- endbuild -->
+    <!-- build:js ./lib/ui.bootstrap-tpls.min.js-->    
+    <script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbuild -->
+    <!-- build:js ./lib/bootstrap.min.js-->    
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>   
+    <!-- endbuild --> 
+    <!-- build:js ./lib/jquery-scrollto.min.js-->    
+    <script type="text/javascript" src="./lib/jquery-scrollto.js"></script>
+    <!-- endbuild -->    
+    <!-- build:js ./js/appController.min.js-->    
+    <script type="text/javascript" src="./js/projectController.js"></script>
+    <!-- endbuild -->    
+    <!-- build:js ./js/app.min.js-->    
+    <script type="text/javascript" src="./js/app.js"></script>    
+    <!-- endbuild -->
+ 
+  </body>
+</html>
+
+
