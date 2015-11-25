@@ -1,30 +1,96 @@
 [
   {
     "id": "Card1",
-    "name": "LOREM IPSU 1",
-    "database": "SQLServer + MongoDb",
-    "view" : "HTML5 + AngularJS + Bootstrap",
-    "server" : "NodeJS + .Net (C#)",
-    "connection" : "WebService + MsETL",
-    "tools" : "JenkinsIC",
-    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque."
-  },{
+    "name": "Interface Maestros",
+    "database": "MS SQLServer + MongoDb",
+    "view": "HTML5 + JavaScript + AngularJS + Bootstrap",
+    "server": "NodeJS + .Net (C#)",
+    "connection": "WebService + MsETL",
+    "tools": "JenkinsIC",
+    "summary": "Este proyecto se realizo con el fin de disponer de un unico interface de maestros para de esta forma mantener la integridad referencial entre las distintas bases de datos que utilizaba la empresa. Además dentro del portal se creo una seccion de repositorio de informes",
+    "link": "Project_InterfaceMaestro.html"
+  },
+  {
     "id": "Card2",
-    "name": "LOREM IPSU 2",
-    "database": "SQLServer + MySQL",
-    "view" : "HTML5 + JQuery",
-    "server" : "PHP5 + .Net (c#)",
-    "connection" : "WebService",
-    "tools" : "Symfony2",
-    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque."
+    "name": "CRM Dispositivos Moviles",
+    "database": "MySQL + MSSQL Server",
+    "view": "HTML5 + JavaScript + SenchaTouch",
+    "server": "PHP5 + NodeJS + .Net (c#)",
+    "connection": "WebService + RabbitMQ",
+    "tools": "JenkinsIC + Symfony2",
+    "summary": "Upgrade de CRM propio para su adaptacion a dispositivos moviles. Además se realizo una refactorizacion tanto de la parte cliente como servidor, y se añadieron nuevas funcionalidades",
+    "link": "Project_CRM_Mobile.html"
   },{
     "id": "Card3",
-    "name": "LOREM IPSU 3",
-    "database": "SQLServer + MongoDb",
-    "view" : "HTML5 + AngularJS + Bootstrap",
-    "server" : "NodeJS + .Net (C#)",
-    "connection" : "WebService + MsETL",
-    "tools" : "JenkinsIC",
-    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus id nunc sit amet placerat. Maecenas tempus sem non odio bibendum, ut laoreet urna ullamcorper. Nunc feugiat, est rhoncus ornare finibus, libero ex posuere libero, fermentum dictum erat risus nec neque."
+    "name": "e-Commerce",
+    "database": "SQLServer + MySQL",
+    "view": "HTML5 + PHP",
+    "server": "Magento + .Net (C#)",
+    "connection": "MsETL",
+    "summary": "Tienda e-Commerce desarrollada sobre Magento y sincronizada en procesos batch nocturnos con Microsoft Dynamics Navision  a través de rest api de magento",
+    "link": "Project_eCommerce.html"
+  },{
+    "id": "Card4",
+    "name": "Reporting",
+    "database": "SQLServer",
+    "view": "HTML5 + PHP5",
+    "server": "PHP5",
+    "connection": "ODBC",
+    "summary": "Sistema de reporting automático diario a la fuerza de ventas a través de mail",
+    "link": "Project_Reporting.html"
+  },{
+    "id": "Card5",
+    "name": "CRM",
+    "database": "SQLServer + MySQL",
+    "view": "PHP5 + HTML5 + Sencha",
+    "server": "PHP + .Net (C#)",
+    "connection": "WebService + MsETL",
+    "tools": "Symfony2",
+    "summary": "Desarrollo de un CRM propio, sincronizado en tiempo real a Microsoft Dynamics Navision a través de servicios Web.",
+    "link": "Project_CRM.html"
+  },{
+    "id": "Card6",
+    "name": "SCM - Control Gestion",
+    "database": "SQLServer + MySQL",
+    "view": "PHP5 + HTML5",
+    "server": "PHP + .Net (C#)",
+    "connection": "WebService + MsETL",
+    "tools": "Symfony2",
+    "summary": "Desarrollo de un sistema de gestion propio/SCM para el control de stock tanto un almacen central como de distintos puntos de venta y reposiciones autómaticas de distintos puntos de venta en funcion de las ventas en funcion de la demanda y unos stocks maximos y minimos",
+    "link": "Project_SCMControlGestion.html"
+  },{
+    "id": "Card7",
+    "name": "Business Intelligent",
+    "database": "SQLServer + MS Analysis Services",
+    "view": "HTML5 + asp.net",
+    "server": ".Net (C#)",
+    "connection": "MsETL",
+    "summary": "Proyecto Business Intelligent compuesto por un panel de mando y distintos informes asociados para la dirección de la empresa y un datawarehouse para su explotacion desde distintos departamentos",
+    "link": "Project_BI.html"
+  },{
+    "id": "Card8",
+    "name": "Sincro Tiendas",
+    "database": "SQLServer",
+    "view": "Shortcutspos",
+    "server": ".Net (C#)",
+    "connection": "MsETL + FTP",
+    "summary": "Creacion de un sistema de comunicacion bidireccional para un mantenimiento unico de distintos puntos de ventas, ademas de la sincronizacion de los mismos con Microsoft Dynamics Nav para su posterior contabilizacion",
+    "link": "Project_Sincro.html"
+  },{
+    "id": "Card9",
+    "name": "Sistema Contratos",
+    "database": "SQLServer",
+    "view": "Microsoft Dynamics Nav",
+    "server": "C/AL",
+    "summary": "Desarrollo de dos sistemas de contratos, uno comercial con distintas marcas y condiciones de venta relacionados entre si, y uno de pago regularizado pudiendo este último estar vinculado a un contrato comercial",
+    "link": "Project_Contratos.html"
+  },{
+    "id": "Card10",
+    "name": "Sistema Facturacion Unica",
+    "database": "SQLServer",
+    "view": "Microsoft Dynamics Nav",
+    "server": "C/AL",
+    "summary": "Sistema de facturacion unica para el cliente, que incluia la posibilidad de tener varias casas comerciales, cada una con unas condiciones de venta diferentes e incluso distintos consultores de ventas para un mismo cliente",
+    "link": "ProjectFactura.html"
   }
 ]
